@@ -11,45 +11,48 @@
         <title>Coding Quiz!</title>
 
 
-        <link rel="stylesheet" href="./assets/css/styles.css/"/>
+        <link rel="stylesheet" href="./assets/css/styles.css"/>
     </head>
 
     <body>
-        <section class="highscores"><a href="highscores.html">Highscores!</a></section>
-
-        <div class="timer">Time Left: <span id="timer">0</span></div>
-
-        <section class="landing">
-            <div id="landing" class="landing-screen">
-                <h1>Coding Quiz!</h1>
-                <h2>Test Your Knowledge!</h2>
-                <p>
-                    Answer the following questions within the 
-                    allowed time (10s).<br>
-                    Incorrect answers will effect total time 
-                    and score!
-                </p>
-                <button id="start-button">Start Now!</button>
-            </div>
-
-            <div id="questions" class="hide">
-                <h2 id="questions-title"></h2>
-                <div id="question-choices" class=choices></div>
-            </div>
-
-            <div id="quiz-end" class="hide">
-                <h2>Well Done!</h2>
-                <p>Your score is <span id="score"></span>!</p>
-                <p>
-                    Please enter your name!
+            <!--Quiz Intro-->
+            <section class="inner-container">        
+                <!--top bar-->
+                <div class="top-bar">
+                    <Button href="highscores.html">Highscores!</button>
+                    <p>Timer: 0</p>
+                </div>
+                <div id="landing" class="landing">
+                    <h1>Coding Quiz!</h1>
+                    <h2>Test Your Knowledge!</h2>
+                    <p>
+                        Answer the following questions within the 
+                        allowed time (10s).<br>
+                        Incorrect answers will effect total time 
+                        and score!<br>
+                     </p>
+                     <button id="start-button">Start Now!</button>
+                 </div>
+                <!--Questions Div-->
+                <div id="questions" class="hide">
+                    <h2 id="questions-title"></h2>
+                    <div id="question-choices" class=choices></div>
+                    </div>
+                <!--Quiz End div-->
+                <div id="quiz-end" class="hide">
+                    <h2>Well Done!</h2>
+                    <p>Your score is <span id="score"></span>!</p>
+                    <p>
+                       Please enter your name!
                     <input type="text" id="name" max="10"/>
-                </p>
-            </div>
-
-            <div id="question-feedback" class="QF-hide"></div>
-        </section>
-
+                    </p>
+                </div>
+                <!--Question Feedback-->
+                <div id="question-feedback" class="QF-hide"></div>
+            </section>
+        </div>
         <script src="./assets/js/logic.js"></script>
         <script src="./assets/js/questions.js"></script>
+
     </body>
 </html>
