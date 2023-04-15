@@ -1,86 +1,66 @@
 // list of all questions, choices, and answers
 var questions = [
   {
-    title: "Which one is a looping structure in JavaScript?",
-    choices: ["All the below", "For", "While", "do-while loops"],
-    answer: "All the below",
+    title:
+      "What is the output of the following code snippet?\nconsole.log(1 + '2' + 3 + 4)",
+    choices: ["'1234'", "'10'", "'234'", "'Invalid Expression'"],
+    answer: "'1234'",
   },
   {
-    title: "What are the two basic groups of data types in JavaScript?",
-    choices: [
-      "Primitive and attribute",
-      "Primitive and reference types",
-      "Reference types and attribute",
-      "None of the above",
-    ],
-    answer: "Primitive and reference types",
-  },
-  {
-    title: "Commonly used data types DO NOT include:",
-    choices: ["strings", "booleans", "alerts", "numbers"],
-    answer: "alerts",
-  },
-  {
-    title: "Boolean operators that can be used in JavaScript include:",
-    choices: [
-      "'And' Operator &&",
-      "'Or' Operator ||",
-      "'Not' Operator !",
-      "All the above",
-    ],
-    answer: "All the above",
+    title: "Which of the following is not a JavaScript reserved keyword?",
+    choices: ["var", "let", "if", "use"],
+    answer: "use",
   },
   {
     title:
-      "Which one of these is not among the three different types of errors in JavaScript?",
-    choices: [
-      "Animation time errors",
-      "Load time errors",
-      "Run time errors",
-      "Logical Errors",
-    ],
-    answer: "Animation time errors",
-  },
-  {
-    title: "What is the data type of variables in JavaScript?",
-    choices: [
-      "Object data types",
-      "Function data type",
-      "None of the above",
-      "All of the above",
-    ],
-    answer: "Object data types",
-  },
-  {
-    title: "The condition in an if / else statement is enclosed within ____.",
-    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-    answer: "parentheses",
-  },
-  {
-    title: "Arrays in JavaScript can be used to store ____.",
-    choices: [
-      "numbers and strings",
-      "other arrays",
-      "booleans",
-      "all of the above",
-    ],
-    answer: "all of the above",
+      "What is the output of the following code snippet?\nconsole.log(2 ** 3)",
+    choices: ["5", "6", "8", "None of the above"],
+    answer: "8",
   },
   {
     title:
-      "String values must be enclosed within ____ when being assigned to variables.",
-    choices: ["commas", "curly brackets", "quotes", "parentheses"],
-    answer: "quotes",
+      "Which of the following is a correct way to declare a variable in JavaScript?",
+    choices: ["variable x = 1;", "let y = 2;", "const z;", "var a = 'Hello';"],
+    answer: "let y = 2;",
   },
   {
     title:
-      "A very useful tool used during development and debugging for printing content to the debugger is:",
-    choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
-    answer: "console.log",
+      "What is the output of the following code snippet?\nconsole.log(typeof null)",
+    choices: ["'object'", "'null'", "'undefined'", "'boolean'"],
+    answer: "'object'",
   },
   {
-    title: "What is the type of Pop up boxes available in JavaScript?:",
-    choices: ["Alert", "Confirm", "Prompt", "All the above"],
-    answer: "All the above",
+    title:
+      "What is the output of the following code snippet?\nconsole.log(3 == '3')",
+    choices: ["true", "false", "undefined", "NaN"],
+    answer: "true",
+  },
+  {
+    title:
+      "What is the output of the following code snippet?\nconsole.log([1, 2, 3] + [4, 5, 6])",
+    choices: ["'1,2,34,5,6'", "[1, 2, 3, 4, 5, 6]", "'1,2,3,4,5,6'", "NaN"],
+    answer: "'1,2,3,4,5,6'",
+  },
+  {
+    title: "Which of the following is not a valid JavaScript data type?",
+    choices: ["Boolean", "Number", "Date", "DateTime"],
+    answer: "DateTime",
+  },
+  {
+    title:
+      "What is the output of the following code snippet?\nconsole.log(typeof function() {})",
+    choices: ["'object'", "'function'", "'undefined'", "'null'"],
+    answer: "'function'",
+  },
+  {
+    title:
+      "Which of the following is a correct way to check if a variable is an array in JavaScript?",
+    choices: [
+      "Array.isArray(myArray)",
+      "myArray.isArray()",
+      "typeof myArray === 'array'",
+      "myArray instanceof Array",
+    ],
+    answer: "Array.isArray(myArray)",
   },
 ];
