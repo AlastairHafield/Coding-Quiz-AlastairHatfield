@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,
-        inital-scale=1.0"/>
-        <meta http-equiv="X-UA-compatible" content="ie=edge"/>
-        <meta name="robots" content="noindex"/>
-        <meta name="description" content="A quiz to test your 
-        Coding knowledge!"/>
-        <title>Coding Quiz!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
 
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nunito:ital,wght@1,300;1,1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <link rel="stylesheet" href="./assets/css/styles.css"/>
-    </head>
+  <body>
+    <div class="scores"><a href="./highscores.html">View Highscores</a></div>
 
-    <body>
-            <!--Quiz Intro-->
-            <section class="inner-container">        
-                <!--top bar-->
-                <div class="top-bar">
-                    <Button href="highscores.html">Highscores!</button>
-                    <p>Timer: 0</p>
-                </div>
-                <div id="landing" class="landing">
-                    <h1>Coding Quiz!</h1>
-                    <h2>Test Your Knowledge!</h2>
-                    <p>
-                        Answer the following questions within the 
-                        allowed time (10s).<br>
-                        Incorrect answers will effect total time 
-                        and score!<br>
-                     </p>
-                     <button id="start-button">Start Now!</button>
-                 </div>
-                <!--Questions Div-->
-                <div id="questions" class="hide">
-                    <h2 id="questions-title"></h2>
-                    <div id="question-choices" class=choices></div>
-                    </div>
-                <!--Quiz End div-->
-                <div id="quiz-end" class="hide">
-                    <h2>Well Done!</h2>
-                    <p>Your score is <span id="score"></span>!</p>
-                    <p>
-                       Please enter your name!
-                    <input type="text" id="name" max="10"/>
-                    </p>
-                </div>
-                <!--Question Feedback-->
-                <div id="question-feedback" class="QF-hide"></div>
-            </section>
-        </div>
-        <script src="./assets/js/logic.js"></script>
-        <script src="./assets/js/questions.js"></script>
+    <div class="timer">Time: <span id="time">0</span></div>
 
-    </body>
+    <div class="wrapper">
+      <div id="start-screen" class="start">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by twenty seconds!
+        </p>
+        <button id="start">Start Quiz</button>
+      </div>
+
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h2>Finished!</h2>
+        <p>Your score is <span id="final-score"></span>.</p>
+        <p>
+          Please enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/quiz.js"></script>
+  </body>
 </html>
